@@ -38,7 +38,8 @@ import com.placesservice.service.facade.PlaceService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("api/places")
+//@RequestMapping("api/places")
+@RequestMapping("")
 public class PlaceController {
 	
 	final static Logger log = LogManager.getLogger(PlaceController.class);

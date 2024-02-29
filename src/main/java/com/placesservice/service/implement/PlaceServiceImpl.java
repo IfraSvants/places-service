@@ -73,10 +73,10 @@ public class PlaceServiceImpl implements PlaceService {
 	@Override
 	public List<PlaceDto> findByVille(String ville) {
 		return placeDao
-				.findByVille(ville)
-				.stream().map( el->modelMapper.map(el, PlaceDto.class) )
-				.collect(Collectors.toList())
-				;
+			.findByVille(ville)
+			.stream().map( el->modelMapper.map(el, PlaceDto.class) )
+			.collect(Collectors.toList())
+			;
 	}
 
 	@Override
